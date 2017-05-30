@@ -21,12 +21,17 @@ public class Runner {
 
 		int intBase10 = 0;
 		String hexAnswer = "";
-
+		int number = 0;
+				
 		Runner myRunner = new Runner();
 		Converter myConverter = new Converter();
 
 		myRunner.welcome();
-
+		myRunner.yournumber();
+		
+		
+		
+		
 		intBase10 = myRunner.enterInteger();
 
 		hexAnswer = myConverter.changeToHex(intBase10);
@@ -51,4 +56,24 @@ public class Runner {
 				"Welcome, this program converts base-10 integers " + "between 0-255 to hexadecimal");
 	}
 
+	private static void yournumber() {
+		int number = Integer.parseInt(JOptionPane.showInputDialog(null,"typer ur number m8ty"));
+		
+		JOptionPane.showMessageDialog(null,"this is your number --" + number + "--");
+		if(number < 0 || number > 255){
+			JOptionPane.showMessageDialog(null,"your number --" + number + "-- does not fit the paramitors please try again");
+			return;
+		}
+		else{
+			JOptionPane.showMessageDialog(null,"everything is fine");
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 }
