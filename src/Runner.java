@@ -56,7 +56,7 @@ public class Runner {
 				"Welcome, this program converts base-10 integers " + "between 0-255 to hexadecimal");
 	}
 
-	private static void yournumber() {
+	public static void yournumber() {
 		int number = Integer.parseInt(JOptionPane.showInputDialog(null,"typer ur number m8ty"));
 		
 		JOptionPane.showMessageDialog(null,"this is your number --" + number + "--");
@@ -65,7 +65,7 @@ public class Runner {
 			return;
 		}
 		else{
-			JOptionPane.showMessageDialog(null,"everything is fine");
+			JOptionPane.showMessageDialog(null,"next we will convert your number into hex");
 		}
 		
 		
